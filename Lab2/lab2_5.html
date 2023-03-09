@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма регистрации пользователя</h1>
+    <form action="vladimirbagrov.github.io/test.txt" enctype="text/plain" method="post"></form>
+    <table>
+        <tr>
+            <td><label>E-mail:</label></td>
+            <td><input type="email" name="email" required></td>
+            
+        </tr>
+        <tr>
+            <td><label>Пароль:</label></td>
+            <td><input type="password" name="Pasword" required></td>
+        </tr>
+        <tr>
+            <td><label>Пол</label></td>
+            <td><label><input type="radio" name="gen" value="man" checked>Мужской</label>
+                <label><input type="radio" name="gen" value="wom" >Женский</label></td>
+        </tr>
+        <tr>
+            <td><label>Год рождения</label></td>
+            <td>
+                <select name="year">
+                    <option>1980</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Я знаю</label></td>
+            <td>
+                <p><label><input type="checkbox" name="lang" value="ru" checked>Русский язык</label></p>
+                <p><label><input type="checkbox" name="lang" value="sp" >Испанский язык</label></p>
+                <p><label><input type="checkbox" name="lang" value="en" checked>Английский язык</label></p>
+                <p><label><input type="checkbox" name="lang" value="ge" >Немецкий язык</label></p>
+                <p><label><input type="checkbox" name="lang" value="ch" >Китайский язык</label></p>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Обо мне</label></td>
+            <td><textarea rows="10" cols="30" name="dis"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Готово"></td>
+            <td><input type="reset" value="Очистить"></td>
+        </tr>
+    </table>
+</body>
+</html>
