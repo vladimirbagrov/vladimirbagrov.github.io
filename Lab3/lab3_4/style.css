@@ -5,7 +5,7 @@ h1,h2{
 }
 
 strong{
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', sans-serif;
 }
 
 p{
@@ -18,5 +18,5 @@ em{
 }
 
 body{
-    background-image: url(first_bg.jpg);
+    background-image: url("first_bg.jpg");
 }
