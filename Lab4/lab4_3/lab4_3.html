@@ -22,11 +22,19 @@
 		.menu li {
 			padding-bottom: 5px;
 		}
-
-		.bg-minus::before {
+		
+		.bg-minus{
 			width: 16px;
 			height: 16px;
-			background: url('css_sprites.png') -10px -46px;
+			background: url('css_sprites.png') -10px -46px no-repeat;
+			float: left;
+		}
+
+		.bg-minus::before {
+			content: "";
+			width: 16px;
+			height: 16px;
+			background: url('css_sprites.png') -10px -46px no-repeat;
 			float: left;
 		}
 
@@ -46,18 +54,32 @@
 			padding-left: 10px;
 		}
 
-		.bg-point::before {
+		.bg-point{
 			width: 16px;
 			height: 16px;
-			background: url('css_sprites.png') -46px -10px;
+			background: url('css_sprites.png') -46px -10px no-repeat;
 			float: left;
 		}
 
+		.bg-point::before {
+			content: "";
+			width: 16px;
+			height: 16px;
+			background: url('css_sprites.png') -46px -10px no-repeat;
+			float: left;
+		}
+
+		.bg-plus{
+			width: 16px;
+			height: 16px;
+			background: url('css_sprites.png') -10px -10px no-repeat;
+			float: left;
+		}
 
 		.bg-plus::before {
 			width: 16px;
 			height: 16px;
-			background: url('css_sprites.png') -10px -10px;
+			background: url('css_sprites.png') -10px -10px no-repeat;
 			float: left;
 		}
 	</style>
