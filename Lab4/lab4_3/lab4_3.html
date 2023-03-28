@@ -17,18 +17,10 @@
 		.menu ul {
 			list-style-type: none;
 			padding-bottom: 10px;
-
 		}
 
 		.menu li {
 			padding-bottom: 5px;
-			display: block;
-		}
-
-		.bg-minus{
-			width: 16px;
-			height: 16px;
-			background: url('css_sprites.png') -10px -46px;
 		}
 
 		.bg-minus::before {
@@ -52,13 +44,6 @@
 		.menu li ul {
 			padding-bottom: 10px;
 			padding-left: 10px;
-			display: block;
-		}
-
-		.bg-point{
-			width: 16px;
-			height: 16px;
-			background: url('css_sprites.png') -46px -10px;
 		}
 
 		.bg-point::before {
@@ -68,11 +53,6 @@
 			float: left;
 		}
 
-		.bg-plus{
-			width: 16px;
-			height: 16px;
-			background: url('css_sprites.png') -10px -10px;
-		}
 
 		.bg-plus::before {
 			width: 16px;
@@ -85,36 +65,36 @@
 
 <body>
 	<nav class="menu">
-		<ul class="bg-minus">
-			<li><a href="#">Фильмы</a>
-				<ul class="bg-point">
-					<li><a href="#">Экшн</a></li>
-					<li><a href="#">Мелодрамы</a></li>
-					<li><a href="#">Сериалы</a></li>
-					<li><a href="#">Семейные</a></li>
+		<ul>
+			<li class="bg-minus"><a href="#">Фильмы</a>
+				<ul class="t">
+					<li class="bg-point"><a href="#">Экшн</a></li>
+					<li class="bg-point"><a href="#">Мелодрамы</a></li>
+					<li class="bg-point"><a href="#">Сериалы</a></li>
+					<li class="bg-point"><a href="#">Семейные</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Музыка</a>
-				<ul class="bg-point">
-					<li><a href="#">Классика</a></li>
-					<li><a href="#">Джаз</a></li>
-					<li><a href="#">Рок</a></li>
-					<li><a href="#">Грандж</a></li>
+			<li class="bg-minus"><a href="#">Музыка</a>
+				<ul class="t">
+					<li class="bg-point"><a href="#">Классика</a></li>
+					<li class="bg-point"><a href="#">Джаз</a></li>
+					<li class="bg-point"><a href="#">Рок</a></li>
+					<li class="bg-point"><a href="#">Грандж</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Софт</a>
-				<ul class="bg-point">
-					<li><a href="#">Графика</a></li>
-					<li><a href="#">3D-моделирование</a></li>
-					<li><a href="#">Машинопись</a></li>
-					<li><a href="#">Переводчики</a></li>
+			<li class="bg-minus"><a href="#">Софт</a>
+				<ul class="t">
+					<li class="bg-point"><a href="#">Графика</a></li>
+					<li class="bg-point"><a href="#">3D-моделирование</a></li>
+					<li class="bg-point"><a href="#">Машинопись</a></li>
+					<li class="bg-point"><a href="#">Переводчики</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Игры</a>
-				<ul class="bg-point">
-					<li><a href="#">РПГ</a></li>
-					<li><a href="#">Шутеры</a></li>
-					<li><a href="#">Пасьянсы</a></li>
+			<li class="bg-minus"><a href="#">Игры</a>
+				<ul class="t">
+					<li class="bg-point"><a href="#">РПГ</a></li>
+					<li class="bg-point"><a href="#">Шутеры</a></li>
+					<li class="bg-point"><a href="#">Пасьянсы</a></li>
 				</ul>
 			</li>
 		</ul>
