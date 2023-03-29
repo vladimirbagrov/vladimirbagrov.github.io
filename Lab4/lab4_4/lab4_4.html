@@ -2,8 +2,7 @@
 <html lang="ru">
 
 <head>
-	<link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
-	<link rel="stylesheet" href="font-awesome/webfonts/fa-regular-400.ttf">
+	<script src="https://kit.fontawesome.com/65bf431d5e.js" crossorigin="anonymous"></script>
 	<meta charset="UTF-8">
 	<title>Оформление вертикального меню</title>
 	<style>
@@ -17,74 +16,76 @@
 		}
 
 		.menu ul {
+			margin-left: 25px;
 			list-style-type: none;
 		}
 
-		.menu i {
+		.menu li {
 			padding: 5px;
 		}
 
-		.menu i a {
+		.menu li a {
 			text-decoration: underline;
 			color: #369;
 
 		}
 
-		.menu i a:hover {
+		.menu li a:hover {
 			background-color: white;
 			color: #369;
 		}
 
-		.menu i ul {
-			padding-bottom: 10px;
-			padding-left: 10px;
+		.menu li ul {
+			padding-bottom: 15px;
+			padding-left: 1px;
 		}
 
-		.menu i i {
-
-			padding: 5px;
+		.menu li li {
+			padding: 3px;
 			display: block;
 		}
+
+		
 	</style>
 </head>
 
 <body>
 	<nav class="menu">
-		<ul>
-			<i class="fa-regular fa-square-minus"><a href="#">Фильмы</a>
-				<ul>
-					<i class="fa-regular fa-circle-dot"><a href="#">Экшн</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Мелодрамы</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Сериалы</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Семейные</a></i>
-				</ul>
-			</i>
+		<ul class="fa-ul">
+			<li><i class=" fa-li fa-regular fa-minus-square"></i><a href="#">Фильмы</a>
+					<ul class="fa-ul">
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Экшн</a></li>
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Мелодрамы</a></li>
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Сериалы</a></li>
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Семейные</a></li>
+					</ul>
+				</li>
 
-			<i class="fa-regular fa-square-minus"><a href="#">Музыка</a>
-				<ul>
-					<i class="fa-regular fa-circle-dot"><a href="#">Классика</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Джаз</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Рок</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Грандж</a></i>
+			<li><i class="fa-li fa-regular fa-square-minus"></i><a href="#">Музыка</a>
+					<ul class="fa-ul">
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Классика</a></li>
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Джаз</a></li>
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Рок</a></li>
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Грандж</a></li>
+					</ul>
+				</li>
+
+			<li><i class="fa-li fa-regular fa-square-minus"></i><a href="#">Софт</a>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Графика</a></li>
+					<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">3D-моделирование</a></li>
+					<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Машинопись</a></li>
+					<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Переводчики</a></li>
 				</ul>
-			</i>
-			
-			<i class="fa-regular fa-square-minus"><a href="#">Софт</a>
-				<ul>				
-					<i class="fa-regular fa-circle-dot"><a href="#">Графика</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">3D-моделирование</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Машинопись</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Переводчики</a></i>
-				</ul>
-			</i>
-			
-			<i class="fa-regular fa-square-minus"><a href="#">Игры</a>
-				<ul>	
-					<i class="fa-regular fa-circle-dot"><a href="#">РПГ</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Шутеры</a></i>
-					<i class="fa-regular fa-circle-dot"><a href="#">Пасьянсы</a></i>
-				</ul>
-			</i>
+			</li>
+
+			<li><i class="fa-li fa-regular fa-square-minus"></i><a href="#">Игры</a>
+					<ul class="fa-ul">
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">РПГ</a></li>
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Шутеры</a></li>
+						<li><i class="fa-li fa-regular fa-circle-dot"></i><a href="#">Пасьянсы</a></li>
+					</ul>
+				</li>
 		</ul>
 	</nav>
 </body>
