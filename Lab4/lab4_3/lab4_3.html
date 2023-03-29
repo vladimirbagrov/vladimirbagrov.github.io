@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-	<meta charset="UTF-8">
-	<title>Оформление вертикального меню</title>
-	<style>
-		html {
-			background: #f0f0f0;
-		}
+		<meta charset="UTF-8">
+		<title>Оформление вертикального меню</title>
+		<style>
+			html {
+				background: #f0f0f0;
+			}
+			
+			.menu {
+				width: 250px;
+				background: #fff;
+			}
+			
+			.menu ul {
+				list-style-type: none;
+            }
+					
+			.menu li a {
+			    text-decoration: underline;
+			    color: #369;
+                
+			}
+			
+			.menu li a:hover {
+                background-color: white;
+			    color: #369;
+			}
+			
+			.menu li ul {
+                padding-bottom: 10px;
+                padding-left: 10px;
+			}
+			
+			.bg-minus::before {
+				content: "";
+    			width: 16px; height: 16px;
+   			 	background: url('css_sprites.png') -5px -5px;
+				float: left;
+			}
 
-		.menu {
-			width: 250px;
-			background: #fff;
-		}
+			.bg-plus::before {
+				content: "";
+    			width: 16px; height: 16px;
+    			background: url('css_sprites.png') -31px -5px;
+				float: left;
+			}
 
-		.menu ul {
-			list-style: none;
-			list-style-type: none;
-			padding-bottom: 10px;
-		}
-
-		.menu li {
-			padding-left: 20px;
-			margin: 5px 0;
-			padding-bottom: 5px;
-		}
-		
-		.menu li a {
-			text-decoration: underline;
-			color: #369;
-
-		}
-
-		.menu li a:hover {
-			background-color: white;
-			color: #369;
-		}
-
-		.menu li ul {
-			padding-bottom: 10px;
-			padding-left: 10px;
-		}
-
-		.bg-minus {
-    		width: 16px; 
-			height: 16px;
-    		background: url('css_sprites.png') -5px -5px;
-		}
-
-		.bg-plus {
-    		width: 16px; 
-			height: 16px;
-    		background: url('css_sprites.png') -31px -5px;
-		}
-
-		.bg-point {
-    		width: 16px; 
-			height: 16px;
-    		background: url('css_sprites.png') -5px -31px;
-		}
+			.bg-point::before {
+				content: "";
+    			width: 16px; height: 16px;
+   				background: url('css_sprites.png') -5px -31px;
+				float: left;
+			}
 
 	</style>
 </head>
-
 <body>
 	<nav class="menu">
 		<ul>
@@ -100,5 +93,4 @@
 		</ul>
 	</nav>
 </body>
-
 </html>
