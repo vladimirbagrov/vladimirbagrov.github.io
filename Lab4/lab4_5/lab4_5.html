@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-		<meta charset="UTF-8">
-		<title>Оформление вертикального меню</title>
-		<style>
-			html {
-				background: #f0f0f0;
-			}
-			
-			.menu {
-				width: 250px;
-				background: #fff;
-			}
-			
-			.menu ul {
-				list-style-type: none;
-            }
+	<meta charset="UTF-8">
+	<title>Оформление вертикального меню</title>
+	<style>
+		html {
+			background: #f0f0f0;
+		}
 
-			.t li{
-				display: none;
-			}
+		.menu {
+			width: 250px;
+			background: #fff;
+		}
 
-			.t:hover li{
-				display: block;
-			}
-			
-			.menu li {
-                list-style-image: url(minus.gif);
-			}
-			
-			.menu li a {
-			    text-decoration: underline;
-			    color: #369;    
-			}
-			
-			.menu li a:hover {
-                background-color: white;
-			    color: #369;
-			}
-			
-			.menu li ul {
-                padding-bottom: 10px;
-                padding-left: 10px;
-			}
-			
-			.menu li li {
-                list-style-image: url(point.gif);
-			}
+		.o {
+			list-style-image: url("plus.gif");
+			width: 200px;
+		}
+
+		.menu li a {
+			text-decoration: underline;
+			color: #369;
+		}
+
+		.menu li a:hover {
+			background-color: white;
+			color: #369;
+		}
+
+		.menu li ul {
+			display: none;
+			position: relative;
+			top: 0;
+			width: 150px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+		}
+
+		.menu li:hover ul {
+			display: block;
+		}
+
+		.menu li li {
+			list-style-image: url(point.gif);
+		}
 	</style>
 </head>
+
 <body>
 	<nav class="menu">
 		<ul class="o">
@@ -86,4 +85,5 @@
 		</ul>
 	</nav>
 </body>
+
 </html>
