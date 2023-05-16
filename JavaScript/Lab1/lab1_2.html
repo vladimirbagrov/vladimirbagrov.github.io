@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        'use strict';
-        let num;
-        num = prompt('Напишите целое значение');
-        if (num>=0 && num<=9007199254740991){
-            alert(`На ветке сидит ${num} ворон`);
-        } else {
-            alert('Введите другое число');
-        }
+<html lang="ru">
 
-    </script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    "use strict";
+    let num = prompt("Введите число: ");
+    if (num == 1) {
+      alert(`На ветке сидит ${num} ворона`);
+    }
+    else if (num % 100 != 11 & num % 100 != 12 & num % 100 != 13 & num % 100 != 14 & num % 10 > 10) {
+      alert(`На ветке сидит ${num} вороны`);
+    }
+    else {
+      alert(`На ветке сидит ${num} ворон`);
+    }
+
+    let nam = prompt("Введите число: ");
+    switch (num) {
+      case '1':
+        alert(`На ветке сидит ${nam} ворона`);
+        break;
+      case num % 100 == 11:
+        alert(`На ветке сидит ${nam} ворон`);
+        break;
+      case num % 100 == 12:
+        alert(`На ветке сидит ${nam} ворон`);
+        break;
+      case num % 100 == 13:
+        alert(`На ветке сидит ${nam} ворон`);
+        break;
+      case num % 100 == 14:
+        alert(`На ветке сидит ${nam} ворон`);
+        break;
+      case num % 10 == 0:
+        alert(`На ветке сидит ${nam} ворон`);
+        break;
+      default:
+        alert(`На ветке сидит ${nam} вороны`);
+    }
+  </script>
+
 </body>
+
 </html>
