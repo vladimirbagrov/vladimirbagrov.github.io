@@ -8,16 +8,23 @@
 </head>
 <body>
     <script>
-        "use strict";
-        let num = prompt("Введите n: ");
-        top:
-        for (let i = 2; i <= num; i++) {
-            for (let j = 2; j < i; j++) {
-                if (i % j == 0) continue top;
+      "use strict"
+        let num=prompt("Введите значение n:");
+        let k;
+        var lst=[];
+        for( let i = 2;  i<=num; i++)
+        {
+            k=0
+            for (let j=2; j<i; j++)
+            {
+                if (i%j==0) k+=1;
             }
-            console.log(i);
+            if (k==0)
+            {
+                lst.push(i)
+            }
         }
-        alert("Все простые числа до " +num+ ": " +lst);
+        alert("Все простые числа до: " +num+ ": " +lst);
     </script>
 </body>
 </html>
