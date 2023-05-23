@@ -13,9 +13,14 @@ function sumTo(n) {
     return sum;//возвращаем сумму
 }
 
-function factorial(n) {
+    
+function factorial(n) {  
     //возвращает факториал числа n 
-    return (n != 1) ? n = factorial(n - 1) : 1;
+    if (n<=1) return 1n;
+    else {
+        res = BigInt (n) * BigInt(factorial(n-1))
+        return res;
+    }  
 }
 
 function fib(n){
