@@ -11,19 +11,16 @@
         "use strict";
 
         let n = prompt("Введите количество строк: ");
-
-        let k = Math.floor(n / 5);
-        let l = n - 5 * k;
-        let one = "dog dog dog cat cat dog";
-        let two = "dog dog cat cat dog dog";
-        let three = "dog cat cat dog dog dog";
-        let four = "cat cat dog dog dog dog";
-        let five = "cat dog dog dog dog cat";
-        var list = [one, two, three, four, five]
-        for (let i = 1; i <= k; i++) {
-            for (let j = 0; j < 5; j++) console.log(list[j]);
+        let row1 = "dog  dog dog cat cat dog ";
+        let row2 = "dog dog cat cat dog dog";
+        let row3 = "dog cat cat dog dog dog";
+        let row4 = "cat cat dog dog dog cat";
+        let row5 = "cat dog dog dog cat cat";
+        const list = [row1, row2, row3, row4, row5]
+        for (let i = 0; i < n; i++) {
+            console.log(list[i % 5]);
         }
-        for (let j = 0; j < l; j++) console.log(list[j]);
     </script>
 </body>
+
 </html>
