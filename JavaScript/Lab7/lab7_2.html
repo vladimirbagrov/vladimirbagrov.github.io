@@ -5,42 +5,43 @@
 	<meta charset="utf-8">
 	<title>Javascript</title>
 	<style>
-		.placeholder:-moz-placeholder {
-			color: blue;
-		}
-
-		.placeholder::-webkit-input-placeholder {
-			color: blue;
+		.placeholder {
+			color: rgb(140, 0, 255);
 		}
 
 		div {
-			color: blue;
+			color: rgb(140, 0, 255);
 			font-size: 12px;
 		}
 	</style>
 </head>
 
 <body>
-	<div></div>
-	<input type="text" class="placeholder" placeholder="Password">
+    <div id="1">
+        <label></label>
+        <input type="email" data-placeholder="alex@gmail.com" />
+    </div>
+    <script>
+        'use strict';
+        let tf = document.getElementById("1");
 
-	<script>
-		'use strict';
+        let input = tf.getElementsByTagName("input")[0];
+        let lb = tf.getElementsByTagName("label")[0];
+        lb.style.display = "none";
 
-		let div = document.querySelector("div");
-		let input = document.querySelector(".placeholder");
+        input.setAttribute("placeholder", input.dataset.placeholder); //setAttribute добавляет атрибут или изменяет значение существующего атрибута в выбранном элементе.
+        lb.innerHTML = input.dataset.placeholder;
 
-		input.onfocus = function () {
-			div.innerHTML = input.getAttribute("placeholder");
-			input.setAttribute("placeholder", "");
-		};
+        input.addEventListener("blur", function () {
+            lb.style.display = "none";
+            input.setAttribute("placeholder", input.dataset.placeholder);
+        });
 
-		input.onblur = function () {
-			input.setAttribute("placeholder", div.innerHTML);
-			div.innerHTML = "";
-		};
-
-	</script>
+        input.addEventListener("focus", function () { //addEventListener устанавливает функцию, которая будет вызываться всякий раз, когда указанное событие доставляется цели
+            lb.style.display = "block";
+            input.setAttribute("placeholder", "");
+        });
+    </script>
 </body>
 
 </html>
