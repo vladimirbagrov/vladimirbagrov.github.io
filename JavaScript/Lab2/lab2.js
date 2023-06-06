@@ -1,41 +1,56 @@
-'use strict';
-//функция возвращает x в степени n (n - целое число).
-function pow(x, n) {
-    return x ** n; //возвращаем х в степени n
+/**
+ * Возвращает a, возведённое в b-ную степень.
+ *
+ * @param {number} a Возводимое в степень число.
+ * @param {number} b Степень, должна быть натуральным числом.
+ * @return {number} a ** b, возведённое в n-ную степень.
+ */
+
+function pow(a, b) {
+    return a ** b;
 }
-// функция вычисляет сумму чисел от 1 до n включительно.
+
+/**
+ * Возвращает сумму чисел от 1 до n включительно.
+ * @param {number} n Число, до которого вычисляется сумма, должно быть натуральным числом.
+ * @return {number} sum, сумму чисел от 1 до n включительно.
+ */
 function sumTo(n) {
-    return (n * (n + 1)) / 2  //формула суммы арифметической прогрессии
-
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
 }
 
 /**
- * Возвращает факториал от n
- * @param {number} n факториал этого числа
- * @returns Факториал от n
+ * Возвращает факториал числа n!.
+ * @param {number} n Число, факториал которого вычисляется, должно быть натуральным числом.
+ * @return {number} res, факториал числа n!.
  */
+
 function factorial(n) {
-    if (n <= 0) {
-        return 1n; //возвращаем 1 для чисел, меньших 0
-    }
+    if (n <= 1) return 1n;
     else {
-        return (BigInt(n) * BigInt(factorial(n - 1))); //использование рекурсии 
+        res = BigInt(n) * BigInt(factorial(n - 1))
+        return res;
     }
 }
+
 /**
- * функция возвращает n-е число Фибоначи
- * @param {number} n 
- * @returns n-е число Фибоначи
+ * Возвращает n-е число Фибоначчи.
+ * @param {number} n Порядковый номер числа Фибоначчи, должен быть натуральным числом.
+ * @return {number} b, n-е число Фибоначчи.
  */
+
 function fib(n) {
-    let a = BigInt(1); // первое число Фиббоначи
-    let b = BigInt(1); //второе число Фиббоначи
-    if (n == BigInt(0)) {
-        return BigInt(0); //возвращаем нуль при n=0
+    let a = 1n;
+    let b = 1n;
+    if (n == 0n) {
+        return 0n;
     }
     else {
-        //алгоритм нахождения чисел Фиббоначи (базовый)
-        for (let i = BigInt(3); i <= n; i++) {
+        for (let i = 3n; i <= n; i++) {
             let c = a + b;
             a = b;
             b = c;
@@ -43,9 +58,16 @@ function fib(n) {
         return b;
     }
 }
-//функция принимает целочисленное значение x и возвращает 
-//анонимную функцию. Анонимная функция возвращает 
-//результат сравнения значений y и x
+
+/**
+ * Возвращает результат сравнения значений y и x.
+ * @param {number} x Первый аргумент, должен быть целочисленным.
+ * @param {number} y Второй аргумент, должен быть целочисленным.
+ * @return {function} Анонимная функция, которая вернет true, false или null
+    
+ }} Результат сравнения.
+ */
+
 function compare(x) {
     return function (y) {
         if (y > x) return true;
@@ -53,11 +75,18 @@ function compare(x) {
         else if (y == x) return null;
     }
 }
-//функция возвращает сумму всех своих аргументов.
+
+/**
+ * Возвращает сумму всех своих аргументов.
+ * @param {number} Значения аргументов.
+ * @return {number} result, сумма всех своих аргументов.
+ */
+
 function sum() {
-    var result = 0; //сумма
+    var result = 0;
     for (var i = 0; i < arguments.length; i++) {
-        result += arguments[i] //складываем элементы на соответствующих местах
+        result += arguments[i];
     }
+
     return result;
 }
