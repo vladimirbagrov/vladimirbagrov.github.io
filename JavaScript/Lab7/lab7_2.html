@@ -27,7 +27,7 @@
 <body>
     <div id="1">
         <label>пароль</label>
-        <input type="password" data-placeholder="password"  />
+        <input type="password" data-placeholder="password" placeholder="password" />
     </div>
     <script>
 		'use strict';
@@ -37,17 +37,17 @@
 		let lb = tf.getElementsByTagName("label")[0];
 		lb.style.display = "none";
 
-		input.setAttribute("placeholder", input.dataset.data-placeholder);
-		lb.innerHTML = input.dataset.data-placeholder;
+		input.setAttribute("placeholder", input.dataset.placeholder);
+		lb.innerHTML = input.dataset.placeholder;
 
 		input.addEventListener("blur", function () {
 			lb.style.display = "none";
-			input.setAttribute("data-placeholder", input.dataset.data-placeholder);
+			input.setAttribute("data-placeholder", input.dataset.placeholder);
 		});
 
 		input.addEventListener("focus", function () {
 			lb.style.display = "block";
-			input.setAttribute("data-placeholder", "");
+			input.setAttribute("placeholder", "");
 		});
     </script>
 </body>
