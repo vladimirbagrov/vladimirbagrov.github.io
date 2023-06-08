@@ -9,7 +9,7 @@
 			color: rgb(140, 0, 255);
 		}
 
-		::placeholder {
+		#one{
 			color: rgb(140, 0, 255);
 		}
 
@@ -21,30 +21,31 @@
 </head>
 
 <body>
-    <div id="1">
+    <div id="one">
         <label>пароль</label>
         <input type="text" data-placeholder="password" placeholder="password" />
     </div>
     <script>
-		'use strict';
-		let tf = document.getElementById("1");
+	'use strict'
 
-		let input = tf.getElementsByTagName("input")[0];
-		let lb = tf.getElementsByTagName("label")[0];
-		lb.style.display = "none";
+		let cont = document.getElementById("one")
 
-		input.setAttribute("placeholder", input.dataset.placeholder);
-		lb.innerHTML = input.dataset.placeholder;
+		let input = cont.getElementsByTagName("input")[0]
+		let lb = cont.getElementsByTagName("label")[0]
+		lb.style.display = "none"
+
+		input.setAttribute("placeholder", input.dataset.placeholder)
+		lb.innerHTML = input.dataset.placeholder
 
 		input.addEventListener("blur", function () {
-			lb.style.display = "none";
-			input.setAttribute("data-placeholder", input.dataset.placeholder);
-		});
+			lb.style.display = "none"
+			input.setAttribute("placeholder", input.dataset.placeholder)
+		})
 
 		input.addEventListener("focus", function () {
-			lb.style.display = "block";
-			input.setAttribute("placeholder", "");
-		});
+			lb.style.display = "block"
+			input.setAttribute("placeholder", "")
+		})
     </script>
 </body>
 
